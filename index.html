@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wedding Proposal</title>
+
+	<link rel="icon" type="image/x-icon" href="https://cdn-icons.flaticon.com/png/512/520/premium/520459.png?token=exp=1657623765~hmac=cccaa6a74492a04721c9f16cf40e7de8">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&amp;display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		* {
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+
+		body {
+			background-image: url(https://images.unsplash.com/photo-1494774157365-9e04c6720e47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+
+		body, html {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+		}
+
+		.question {
+			text-align: center;
+			background: #fff;
+			background-image: url(https://images.unsplash.com/photo-1593722017239-6ab56bb60712?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+			width: 90%;
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 20px;
+			min-height: 300px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			border: 3px solid red;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+		}
+
+		button {
+			background: red;
+			border: 2px solid red;
+			color: #fff;
+			font-size: 24px;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 10px 30px;
+			border-radius: 50px;
+			line-height: 1em;
+			min-width: 150px;
+			max-width: 150px;
+			width: 50%;
+			margin: 10px;
+			cursor: pointer;
+			-webkit-transition: .3s all ease;
+			-o-transition: .3s all ease;
+			transition: .3s all ease;
+		}
+
+		button:hover {
+			background: red;
+			border-color: white;
+			color: black;
+		}
+
+		.btn-wrap {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		h1 {
+			font-size: 60px;
+			color: #fff;
+			margin-top: 0;
+		}
+
+		body > div {
+			display: none;
+		}
+
+		.footer-info {
+			display: block;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			bottom: 30px;
+			right: 0;
+			color: #fff;
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 18px;
+		}
+
+		.footer-info a {
+			color: #fff;
+		}
+
+		@media screen and (max-width: 767px) {
+			h1 {
+				font-size: 12vw;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+		button {
+		    min-width: 120px;
+		    max-width: 120px;
+		}
+		}
+	</style>
+<script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer data-domain="proposal.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body>
+
+	<section class="question">
+		<h1>WILL YOU MARRY ME?</h1>
+		<div class="btn-wrap">
+			<button class="yes">Yes</button>
+			<button class="no">No</button>
+		</div>
+	</section>
+
+	<div class="footer-info">
+		Made with ❤️ by <a href="https://rrrr-8b97d.web.app/" target="_blank"><strong>RN</strong></a>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+	        $('.yes').click(function(){
+	            $('.question').html('<h1>YOU CAN NOW KISS ME!<br>❤️</h1>');
+	        });
+	    });
+
+	    var b = document.querySelector(".no");
+	    b.addEventListener("mouseover",change);
+	    b.addEventListener("click",change);
+	    function change() {
+	    	const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+	        var i = Math.floor(Math.random()*vw)/2;
+	        var j = Math.floor(Math.random()*vh)/2;
+	        b.style.left = i+"px";
+	        b.style.top = j+"px";
+	        b.style.position = "absolute";
+	    }
+	</script>
+
+
+
+</body>
+</html>
